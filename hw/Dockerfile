@@ -11,3 +11,5 @@ apk --purge del .build-deps
 
 
 ENTRYPOINT ["python","/data/web.py"]
+# docker run  --rm -it --name postgres_app  --mount type=bind,src=/srv/app,dst=/data  -p=9012:80 python_app
+
